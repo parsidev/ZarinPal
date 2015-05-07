@@ -1,7 +1,8 @@
 {
-    "name": "parsidev/zarinpal",
-    "description": "package for ZarinPal WebService (published for ir.zarinpal.com)",
+    "name": "parsidev/zaripal",
+	"description": "package for ZarinPal WebService (published for ir.zarinpal.com)",
     "license": "MIT",
+    "description": "",
     "authors": [
         {
             "name": "Mohammad Reza",
@@ -14,7 +15,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Parsidev\\Zarinpal": "src/"
+            "Parsidev\\Zaripal": "src/"
         }
     },
     "minimum-stability": "stable"
