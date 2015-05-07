@@ -1,0 +1,21 @@
+{
+    "name": "parsidev/zarinpal",
+    "description": "package for ZarinPal WebService (published for ir.zarinpal.com)",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohammad Reza",
+            "email": "info@parsidev.ir"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Parsidev\\Zarinpal": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
