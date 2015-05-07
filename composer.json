@@ -1,6 +1,6 @@
 {
-    "name": "parsidev/zaripal",
-	"description": "package for ZarinPal WebService (published for ir.zarinpal.com)",
+    "name": "parsidev/zarinpal",
+    "description": "package for ZarinPal WebService (published for ir.zarinpal.com)",
     "license": "MIT",
     "description": "",
     "authors": [
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Parsidev\\Zaripal": "src/"
+            "Parsidev\\Zarinpal": "src/"
         }
     },
     "minimum-stability": "stable"
