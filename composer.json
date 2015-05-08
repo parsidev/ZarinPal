@@ -2,7 +2,6 @@
     "name": "parsidev/zarinpal",
     "description": "package for ZarinPal WebService (published for ir.zarinpal.com)",
     "license": "MIT",
-    "description": "",
     "authors": [
         {
             "name": "Mohammad Reza",
