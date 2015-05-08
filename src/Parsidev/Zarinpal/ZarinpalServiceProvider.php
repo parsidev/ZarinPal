@@ -17,7 +17,7 @@ class ZarinpalServiceProvider extends ServiceProvider {
     public function register() {
         $this->app['zarinpal'] = $this->app->share(function($app) {
             $config = config('zarinpal');
-            return new Zarinpal($config, new SoapClient($config['webServiceUrl'], array('encoding' => 'UTF-8')));
+            return new Zarinpal($config);
         });
     }
 

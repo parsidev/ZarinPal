@@ -2,17 +2,29 @@
 
 namespace Parsidev\Zarinpal;
 
+use SoapClient;
+
 class Zarinpal {
 
     protected $confg;
     protected $client;
 
-    public function __construct($config, $client) {
-        $this->confg = $config;
-        $this->client = $client;
+    private function createClient($isIran = true) {
+        if ($isIran) {
+            $url = $this->confg['webServiceUrlIran'];
+        } else {
+            $url = $this->confg['webServiceUrlGermany'];
+        }
+
+        $this->client = new SoapClient($url, array('encoding' => 'UTF-8'));
     }
 
-    public function getFunctions() {
+    public function __construct($config) {
+        $this->confg = $config;
+    }
+
+    public function getFunctions($isIran = true) {
+        $this->createClient($isIran);
         $functions = $this->client->__getFunctions();
         $response = "<ol>\n";
         foreach ($functions as $function) {

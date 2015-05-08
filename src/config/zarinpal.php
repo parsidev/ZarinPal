@@ -1,6 +1,8 @@
 <?php
 
 return [
-    'webServiceUrl' => 'https://de.zarinpal.com/pg/services/WebGate/wsdl',
-    'merchantId' => '********-****-****-****-************',
+    'webServiceUrlIran' => 'https://ir.zarinpal.com/pg/services/WebGate/wsdl',
+    'webServiceUrlGermany' => 'https://de.zarinpal.com/pg/services/WebGate/wsdl',
+    'merchantIdZarinPal' => '********-****-****-****-************',
+    'webServiceIdDedicated' => '********-****-****-****-************',
 ];
