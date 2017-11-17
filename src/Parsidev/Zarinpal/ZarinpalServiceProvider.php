@@ -15,7 +15,7 @@ class ZarinpalServiceProvider extends ServiceProvider {
     }
 
     public function register() {
-        $this->app['zarinpal'] = $this->app->singleton(Zarinpal::class, function($app) {
+        $this->app->singleton('zarinpal', function($app) {
             $config = config('zarinpal');
             return new Zarinpal($config);
         });
